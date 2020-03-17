@@ -2,9 +2,9 @@
   <div class="footer_container">
     <van-tabbar v-model="active">
       <van-tabbar-item icon="home-o" to="/msite">首页</van-tabbar-item>
-      <van-tabbar-item icon="search" to="/sort">分类</van-tabbar-item>
-      <van-tabbar-item icon="friends-o" to="/buy">值得买</van-tabbar-item>
-      <van-tabbar-item icon="setting-o" to="/profile">我的</van-tabbar-item>
+       <van-tabbar-item icon="wap-nav" to="/sort">分类</van-tabbar-item>
+      <van-tabbar-item icon="gift" to="/buy">值得买</van-tabbar-item>
+      <van-tabbar-item icon="friends" to="/profile">我的</van-tabbar-item>
     </van-tabbar>
   </div>
   
@@ -14,11 +14,7 @@ export default {
   name: 'FooterGuide',
   data () {
     return {
-      active: 0,
-      icon: {
-        active: '../imges/fenlei.png',
-        inactive: 'https://img.yzcdn.cn/vant/user-inactive.png'
-      }
+      active: 0
     }
   }
 }
